@@ -67,7 +67,7 @@
     },
     "scene-greece": {
       "name": "Greece",
-      "background0image": "/img/greecebackground.png",
+      "backgroundimage": "/img/greecebackground.png",
       "items" : [
       ],
       "characters": [
@@ -78,7 +78,7 @@
     },
     "scene-slough": {
       "name": "Slough",
-      "background0image": "/img/slough.png",
+      "backgroundimage": "/img/slough.png",
       "items" : [
       ],
       "characters": [
