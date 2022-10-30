@@ -28,8 +28,7 @@
       "items": [
         "item-magnet",
         "item-baseball-bat",
-        "item-umbrella-1",
-        "item-umbrella-2"
+        "item-umbrella-1"
       ],
       "characters": [
         "character-space-horse",
@@ -116,19 +115,13 @@
       "name": "baseball-bat",
       "x": 150,
       "y": 125,
-      "image": "/img/baseball-bat.png"
+      "image": "/img/bat.png"
     },
     "item-umbrella-1": {
       "name": "umbrella-1",
       "x": 160,
       "y": 75,
-      "image": "/img/umbrella-1.png"
-    },
-    "item-umbrella-2": {
-      "name": "umbrella-2",
-      "x": 180,
-      "y": 85,
-      "image": "/img/umbrella-2.png"
+      "image": "/img/umbrella1.png"
     },
     "item-fish": {
       "name": "fish",
@@ -158,19 +151,19 @@
         "name": "paracetamol2",
         "x": 100,
         "y": 150,
-        "image": "/img/paracetamol.png"
+        "image": "/img/paracetamol2.png"
       },
       "item-rat-trap-1":{
         "name": "Rat Trap 1",
         "x": 50,
         "y": 60,
-        "image": "/img/rat-trap.png"
+        "image": "/img/trap1.png"
       },
       "item-rat-trap-2":{
         "name": "Rat Trap 2",
         "x": 50,
         "y": 60,
-        "image": "/img/rat-trap.png"
+        "image": "/img/trap2.png"
       }
   },
   "characters": {
