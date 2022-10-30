@@ -38,7 +38,7 @@
     },
     "scene-egypt": {
       "name": "Egypt",
-      "background0image": "/img/egyptbackground.png",
+      "background-image": "/img/egyptbackground.png",
       "items" : [
         "item-fish",
         "item-sun",
@@ -51,7 +51,7 @@
     },
     "scene-plague": {
       "name": "Plague",
-      "background0image": "/img/plaguebackground.png",
+      "background-image": "/img/plaguebackground.png",
       "items" : [
         "item-paracetamol-1",
         "item-paracetamol-2",
