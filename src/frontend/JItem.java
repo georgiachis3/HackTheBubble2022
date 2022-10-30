@@ -20,7 +20,7 @@ public class JItem extends JButton {
         setIcon(icon);
 
         Dimension size = getPreferredSize();
-        setBounds(1000,500, size.width, size.height);
+        setBounds(item.getX(),item.getY(), size.width, size.height);
 
         setOpaque(false);
         setContentAreaFilled(false);
