@@ -188,8 +188,8 @@
     },
     "character-doctor":{
       "name": "Doctor",
-      "x": 161,
-      "y": 416,
+      "x": 151,
+      "y": 316,
       "image": "/img/Doctor.png"
     },
     "character-space-horse-dino": {

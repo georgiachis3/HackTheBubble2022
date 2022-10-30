@@ -10,7 +10,7 @@ import java.awt.event.ActionListener;
 import java.io.IOException;
 import java.net.URISyntaxException;
 
-public class GameWindow extends JFrame{
+public class GameWindow extends JFrame implements SceneChanger{
     private JPanel contentPane;
     public GameWindow() {
         setup();
@@ -78,6 +78,7 @@ public class GameWindow extends JFrame{
         refresh();
     }
 
+    @Override
     public void changeScene() {
         loadNewScene();
     }

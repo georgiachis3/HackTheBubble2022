@@ -14,7 +14,7 @@ public class JItem extends JButton {
     private final Container frame;
     private final Runnable sceneClickHandler;
 
-    public JItem(String itemId, Container frame) throws NoSuchGameObjectException {
+    public JItem(String itemId, Container frame, Runnable sceneClickHandler) throws NoSuchGameObjectException {
         super("");
         this.itemId = itemId;
         this.frame = frame;
