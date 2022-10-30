@@ -16,7 +16,6 @@
         "character-doctor"
       ],
       "dialogues": [
-        "dialogue-basic",
         "dialogue-space-hospital"
       ],
       "portal": "portal-hospital"
