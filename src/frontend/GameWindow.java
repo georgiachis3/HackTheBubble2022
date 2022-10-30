@@ -26,9 +26,17 @@ public class GameWindow extends JFrame{
     }
 
     private void imageTest() {
-        ImageIcon icon = new ImageIcon(this.getClass().getResource("/img/SpaceHorse.png"));
+        ImageIcon icon = new ImageIcon(this.getClass().getResource("/img/background-hospital.png"));
         JLabel test = new JLabel();
         test.setIcon(icon);
         contentPane.add(test);
+
+        refresh();
+    }
+
+    public void refresh() {
+        contentPane.invalidate();
+        contentPane.validate();
+        contentPane.repaint();
     }
 }
