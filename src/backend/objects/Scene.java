@@ -10,19 +10,19 @@ public class Scene {
     private final List<String> itemIds;
     private final List<String> characterIds;
     private final String backgroundImage;
-    private final List<String> dialogues;
+    private final List<String> dialogueIds;
 
     @JsonCreator
     public Scene(@JsonProperty("name") String name,
                  @JsonProperty("items") List<String> items,
                  @JsonProperty("characters") List<String> characters,
                  @JsonProperty("background-image") String backgroundImage,
-                 @JsonProperty("dialogues") List<String> dialogues) {
+                 @JsonProperty("dialogues") List<String> dialogueIds) {
         this.name = name;
         this.itemIds = items;
         this.characterIds = characters;
         this.backgroundImage = backgroundImage;
-        this.dialogues = dialogues;
+        this.dialogueIds = dialogueIds;
     }
 
     public String getName() {
@@ -41,7 +41,7 @@ public class Scene {
         return backgroundImage;
     }
 
-    public List<String> getDialogues() {
-        return dialogues;
+    public List<String> getDialogueIds() {
+        return dialogueIds;
     }
 }
