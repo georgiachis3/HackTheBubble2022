@@ -1,22 +1,31 @@
 package backend;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import exceptions.NoSuchGameObjectException;
 
 import java.io.IOException;
+import java.net.URISyntaxException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
 public class Game {
+    private static final String GAME_JSON_FILE = "/game.json";
 
-    public static void main(String[] args) throws IOException, NoSuchGameObjectException {
-        byte[] jsonData = Files.readAllBytes(Path.of("game.json"));
+    private final Player player;
+
+    private String scene;
+
+
+    public Game() throws IOException, URISyntaxException {
+        player = new Player();
+
+        byte[] jsonData = Files.readAllBytes(Path.of(this.getClass().getResource(GAME_JSON_FILE).toURI()));
 
         ObjectMapper objectMapper = new ObjectMapper();
 
         GameObjectStore objectStore = objectMapper.readValue(jsonData, GameObjectStore.class);
 
-        System.out.println(objectStore.getItemById("item-1").getName());
+        scene = objectStore.getInitialScene();
     }
+
 
 }

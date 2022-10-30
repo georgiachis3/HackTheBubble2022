@@ -20,4 +20,12 @@ public class Scene {
     public String getName() {
         return name;
     }
+
+    public List<String> getItemIds() {
+        return itemIds;
+    }
+
+    public List<String> getCharacterIds() {
+        return characterIds;
+    }
 }
