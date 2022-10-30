@@ -1,14 +1,15 @@
 import javax.swing.*;
 
 public class Main {
+    private static JPanel contentPane;
 
     public static void main(String[] args) {
         JFrame frame = new JFrame();
 
-        frame.setSize(400, 500);
+        frame.setSize(600, 400);
 
-        frame.setLayout(null);
+        contentPane = getContentPane();
+        contentPane.setLayout(new BorderLayout());
         frame.setVisible(true);
     }
-
 }
