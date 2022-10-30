@@ -1,0 +1,29 @@
+{
+  "scenes": {
+    "scene-1": {
+      "name": "Dino-horse",
+      "items": [
+        "item-1"
+      ]
+    }
+  },
+  "items": {
+    "item-1": {
+      "name": "screwdriver",
+      "x": 100,
+      "y": 50,
+      "image": "img/screwdriver.png"
+    }
+  },
+  "characters": {
+
+  },
+  "portals": {
+    "portal-1": {
+      "to": [
+        "scene-1",
+        "scene-2"
+      ]
+    }
+  }
+}
