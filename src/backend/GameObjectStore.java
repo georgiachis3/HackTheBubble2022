@@ -1,9 +1,7 @@
 package backend;
 
+import backend.objects.*;
 import backend.objects.Character;
-import backend.objects.Item;
-import backend.objects.Portal;
-import backend.objects.Scene;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import exceptions.NoSuchGameObjectException;
 
@@ -24,6 +22,7 @@ public class GameObjectStore {
     private Map<String, Item> items;
     private Map<String, Character> characters;
     private Map<String, Portal> portals;
+    private Map<String, Dialogue> dialogues;
 
     private GameObjectStore() {}
 
@@ -41,6 +40,10 @@ public class GameObjectStore {
 
     public void setPortals(Map<String, Portal> portals) {
         this.portals = portals;
+    }
+
+    public void setDialogues(Map<String, Dialogue> dialogues) {
+        this.dialogues = dialogues;
     }
 
     public Scene getSceneById(String id) throws NoSuchGameObjectException {
@@ -70,6 +73,14 @@ public class GameObjectStore {
     public Portal getPortalById(String id) throws NoSuchGameObjectException {
         if (portals.containsKey(id)) {
             return portals.get(id);
+        } else {
+            throw new NoSuchGameObjectException();
+        }
+    }
+
+    public Dialogue getDialogueById(String id) throws NoSuchGameObjectException {
+        if (dialogues.containsKey(id)) {
+            return dialogues.get(id);
         } else {
             throw new NoSuchGameObjectException();
         }
