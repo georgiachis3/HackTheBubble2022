@@ -8,6 +8,11 @@ public class GameWindow extends JFrame{
     private JPanel contentPane;
 
     public GameWindow() {
+        setup();
+        imageTest();
+    }
+
+    private void setup() {
         setTitle(Config.WINDOW_TITLE);
         setSize(Config.SCREEN_WIDTH, Config.SCREEN_HEIGHT);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -18,5 +23,12 @@ public class GameWindow extends JFrame{
         setContentPane(contentPane);
 
         setVisible(true);
+    }
+
+    private void imageTest() {
+        ImageIcon icon = new ImageIcon(this.getClass().getResource("/img/SpaceHorse.png"));
+        JLabel test = new JLabel();
+        test.setIcon(icon);
+        contentPane.add(test);
     }
 }
