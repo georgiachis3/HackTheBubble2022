@@ -31,7 +31,7 @@ public class JScene extends JLabel {
     private void createObjects(Scene scene) {
         try {
             for (String characterId : scene.getCharacterIds()) {
-                add(new JCharacter(characterId));
+                add(new JCharacter(characterId, this));
             }
             for (String itemId : scene.getItemIds()) {
                 add(new JItem(itemId, this));
