@@ -1,16 +1,11 @@
 package frontend;
 
-import frontend.Config;
-
-import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
 import backend.Game;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.image.BufferedImage;
-import java.io.IOException;
 
 public class GameWindow extends JFrame{
     private JPanel contentPane;
@@ -21,6 +16,7 @@ public class GameWindow extends JFrame{
     }
 
     private void setup() {
+        setResizable(false);
         setTitle(Config.WINDOW_TITLE);
         setSize(Config.SCREEN_WIDTH, Config.SCREEN_HEIGHT);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

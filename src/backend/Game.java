@@ -12,6 +12,15 @@ import java.util.Objects;
 public class Game {
     private static final String GAME_JSON_FILE = "/game.json";
 
+    private static Game instance = null;
+
+    public static Game getInstance() throws IOException, URISyntaxException {
+        if (instance == null) {
+            instance = new Game();
+        }
+        return instance;
+    }
+
     public static URL getResource(String path) {
         return Objects.requireNonNull(Game.class.getResource(path));
     }
@@ -20,7 +29,7 @@ public class Game {
 
     private String scene;
 
-    public Game() throws IOException, URISyntaxException {
+    private Game() throws IOException, URISyntaxException {
         player = new Player();
 
         byte[] jsonData = Files.readAllBytes(Path.of(this.getClass().getResource(GAME_JSON_FILE).toURI()));
@@ -32,5 +41,15 @@ public class Game {
         scene = objectStore.getInitialScene();
     }
 
+    public Player getPlayer() {
+        return player;
+    }
 
+    public String getScene() {
+        return scene;
+    }
+
+    public void setScene(String scene) {
+        this.scene = scene;
+    }
 }
