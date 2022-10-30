@@ -14,13 +14,13 @@ import java.util.ArrayList;
 
 public class JDialogue extends JButton {
     private final String dialogueId;
-    private final Container parent;
+    private final Container parentElement;
     private ArrayList<String> dialogueList = new ArrayList<String>();
 
-    public JDialogue(String dialogueId, Container parent) throws NoSuchGameObjectException {
+    public JDialogue(String dialogueId, Container parentElement) throws NoSuchGameObjectException {
         super("");
         this.dialogueId = dialogueId;
-        this.parent = parent;
+        this.parentElement = parentElement;
         Dialogue dialogue = GameObjectStore.getInstance().getDialogueById(dialogueId);
 
         Dimension size = getPreferredSize();
@@ -42,7 +42,7 @@ public class JDialogue extends JButton {
     }
 
     private void nextDialogue() {
-        if (dialogueList.size() == 0) parent.remove(this);
+        if (dialogueList.size() == 0) parentElement.remove(this);
         setText(dialogueList.get(0));
         dialogueList.remove(0);
 

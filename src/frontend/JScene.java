@@ -11,7 +11,7 @@ import javax.swing.*;
 public class JScene extends JLabel {
     private final String sceneId;
 
-    public JScene(String sceneId) throws NoSuchGameObjectException {
+    public JScene(String sceneId, SceneChanger sc) throws NoSuchGameObjectException {
         super ("");
         this.sceneId = sceneId;
         Scene scene = GameObjectStore.getInstance().getSceneById(sceneId);

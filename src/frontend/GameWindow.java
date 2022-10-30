@@ -3,9 +3,12 @@ package frontend;
 import javax.swing.*;
 import java.awt.*;
 import backend.Game;
+import exceptions.NoSuchGameObjectException;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.IOException;
+import java.net.URISyntaxException;
 
 public class GameWindow extends JFrame{
     private JPanel contentPane;
@@ -56,7 +59,26 @@ public class GameWindow extends JFrame{
     }
 
     private void loadGame() {
+        loadNewScene();
+    }
+
+    public void loadNewScene() {
         contentPane.removeAll();
+        try {
+            Game game = Game.getInstance();
+            String sceneId = game.getScene();
+            contentPane.add(new JScene(sceneId, this::changeScene));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        } catch (URISyntaxException e) {
+            throw new RuntimeException(e);
+        } catch (NoSuchGameObjectException e) {
+            throw new RuntimeException(e);
+        }
         refresh();
+    }
+
+    public void changeScene() {
+        loadNewScene();
     }
 }
