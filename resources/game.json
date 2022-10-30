@@ -24,7 +24,7 @@
     },
     "scene-dinosaur": {
       "name": "Dinosaur",
-      "background-image": "img/dinosaur-scene.png",
+      "background-image": "/img/dinosaur-scene.png",
       "items": [
         "item-magnet",
         "item-baseball-bat",
@@ -35,6 +35,35 @@
         "character-space-horse",
         "character-diplodocus",
         "character-triceratops"
+      ]
+    },
+    "scene-egypt": {
+      "name": "Egypt",
+      "background0image": "/img/egypt-scene.png",
+      "items" : [
+        "item-fish",
+        "item-sun",
+        "item-fire"
+      ],
+      "characters": [
+        "character-space-horse",
+        "character-sphinx"
+      ]
+    },
+    "scene-plague": {
+      "name": "Plague",
+      "background0image": "/img/plague-scene.png",
+      "items" : [
+        "item-paracetamol-1",
+        "item-paracetamol-2",
+        "item-rat-trap-1",
+        "item-rat-trap-2"
+      ],
+      "characters": [
+        "character-space-horse-plague",
+        "character-space-horse-dying",
+        "character-plague-doctor",
+        "character-rat"
       ]
     }
   },
@@ -80,7 +109,49 @@
       "x": 180,
       "y": 85,
       "image": "/img/umbrella-2.png"
-    }
+    },
+    "item-fish": {
+      "name": "fish",
+      "x": 72,
+      "y": 81,
+      "image": "/img/fish.png"
+    },
+    "item-fire": {
+      "name": "fire",
+      "x": 210,
+      "y": 50,
+      "image": "/img/fire.png"
+    },
+      "item-sun":{
+        "name": "sun",
+        "x": 85,
+        "y": 200,
+        "image": "/img/sun.png"
+      },
+      "item-paracetamol-1":{
+        "name": "paracetamol",
+        "x": 76,
+        "y": 80,
+        "image": "/img/paracetamol.png"
+      },
+      "item-paracetamol-2":{
+        "name": "paracetamol2",
+        "x": 100,
+        "y": 150,
+        "image": "/img/paracetamol.png"
+      },
+      "item-rat-trap-1":{
+        "name": "Rat Trap 1",
+        "x": 50,
+        "y": 60,
+        "image": "/img/rat-trap.png"
+      },
+      "item-rat-trap-2":{
+        "name": "Rat Trap 2",
+        "x": 50,
+        "y": 60,
+        "image": "/img/rat-trap.png"
+      }
   },
   "characters": {
     "character-space-horse": {
@@ -118,6 +189,36 @@
       "x": 65,
       "y": 25,
       "image": "/img/Triceratops.png"
+    },
+    "character-sphinx":{
+      "name": "Sphinx",
+      "x": 60,
+      "y": 80,
+      "image": "/img/Sphinx.png"
+    },
+    "character-plague-doctor":{
+      "name": "Plague Doctor",
+      "x": 82,
+      "y": 34,
+      "image": "/img/PlagueDoctor.png"
+    },
+    "character-rat":{
+      "name": "Rat",
+      "x": 95,
+      "y": 78,
+      "image": "/img/Rat.png"
+    },
+    "character-space-horse-plague": {
+      "name": "Plague Space Horse",
+      "x": 25,
+      "y": 25,
+      "image": "/img/PlagueSpaceHorse.png"
+    },
+    "character-space-horse-dying": {
+      "name": "Dying Space Horse",
+      "x": 25,
+      "y": 25,
+      "image": "/img/DyingSpaceHorse.png"
     }
   },
   "portals": {
@@ -183,6 +284,38 @@
         "Space Horse: Uh I'm a horse? Have you seen any weird things around recently?",
         "Triceratops: Yeh, this well weird fucker dropped some expanding thing over there somewhere",
         "Space Horse: Okay thanks!"
+      ]
+    },
+    "dialogue-egypt": {
+      "text": [
+        "Sphinx: Another challenger. I hope you're more resilient than the last one",
+        "Space Horse: Sorry who are you?",
+        "Sphinx: If you cannot comprehend what stands before you, how are you to entertain me?",
+        "Space Horse: Entertain you? What the fuck?",
+        "Spinx: One must risk everything in the pursuit of knowledge. If you can answer my questions wisely, you will have proven yourself worthy.",
+        "Narrator: The Sphinx will tell you three riddles, the answers will be found around Egypt to get you out of Egypt",
+        "Sphinx: I'm alive, but without breath. I'm as cold in life as in death. I'm never thirsty, though I always drink",
+        "Sphinx: If you feed me with food, I will survive. But if you make me drink water, I will perish",
+        "Sphinx: Never resting, never still. Moving silently from hill to hill. It does not walk, run or trot. All is cool where it is not"
+      ]
+    },
+    "dialogue-plague-doctor": {
+      "text": [
+        "Plague Doctor: Hello there, do you have a fever? Vomiting? Any swelling?",
+        "Space Horse: Uh no... not that I'm aware of? What's going on?",
+        "Plague Doctor: How have you not heard about it, it's all the rage at the moment. The Black Death!",
+        "Space Horse: Oh fuck.",
+        "Plague Doctor: However, I might have found a cure, a rather strange man handed me these packets, and I have distributed them across the city. They were called 'Cold and Flu'",
+        "Space Horse: The strongest medicine on the planet..."
+      ]
+    },
+    "dialogue-plague-rat":  {
+      "text": [
+        "Rat: Send help! There are all of these contraptions around this city!",
+        "Space Horse: What contraptions?",
+        "Rat: These rat traps! They're killing of all the rats, and the plague can't spread",
+        "Space Horse: Don't worry! Space horse is on it!",
+        "Rat: Mate you're not some fucking superhero"
       ]
     }
   }
