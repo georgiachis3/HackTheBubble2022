@@ -67,7 +67,7 @@
     },
     "scene-greece": {
       "name": "Greece",
-      "background0image": "/img/greece-scene.png",
+      "background0image": "/img/greecebackground.png",
       "items" : [
       ],
       "characters": [
@@ -78,7 +78,7 @@
     },
     "scene-slough": {
       "name": "Slough",
-      "background0image": "/img/slough-scene.png",
+      "background0image": "/img/slough.png",
       "items" : [
       ],
       "characters": [
@@ -243,19 +243,19 @@
       "name": "Poseidon",
       "x": 47,
       "y": 12,
-      "image": "/img/Poseidon.png"
+      "image": "/img/poseidon.png"
     },
     "character-keith-all-fours":{
       "name": "Keith",
       "x": 69,
       "y": 69,
-      "image": "/img/Keith-All-Fours.png"
+      "image": "/img/keithgrass.png"
     },
     "character-keith-stood-up":{
       "name": "Keith",
       "x": 69,
       "y": 69,
-      "image": "/img/Keith-Stood-Up.png"
+      "image": "/img/keithslough.png"
     },
     "character-space-horse-ill": {
       "name": "Ill Space Horse",
