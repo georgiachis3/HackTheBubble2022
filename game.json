@@ -12,6 +12,10 @@
         "character-space-horse-confused",
         "character-space-horse-shocked",
         "character-doctor"
+      ],
+      "dialogues": [
+        "dialogue-basic",
+        "dialogue-space-hospital"
       ]
     }
   },
