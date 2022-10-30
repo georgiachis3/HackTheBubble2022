@@ -1,7 +1,10 @@
 {
+  "menuImage": "/img/menu.png",
+  "initialScene": "scene-space-hospital",
   "scenes": {
     "scene-space-hospital": {
-      "name": "Space-Hospital",
+      "name": "Space Hospital",
+      "background-image": "/img/hospital.png",
       "items": [
         "item-screwdriver",
         "item-hammer",
@@ -12,6 +15,25 @@
         "character-space-horse-confused",
         "character-space-horse-shocked",
         "character-doctor"
+      ],
+      "dialogues": [
+        "dialogue-basic",
+        "dialogue-space-hospital"
+      ]
+    },
+    "scene-dinosaur": {
+      "name": "Dinosaur",
+      "background-image": "img/dinosaur-scene.png",
+      "items": [
+        "item-magnet",
+        "item-baseball-bat",
+        "item-umbrella-1",
+        "item-umbrella-2"
+      ],
+      "characters": [
+        "character-space-horse",
+        "character-diplodocus",
+        "character-triceratops"
       ]
     }
   },
@@ -20,19 +42,43 @@
       "name": "screwdriver",
       "x": 100,
       "y": 50,
-      "image": "img/screwdriver.png"
+      "image": "/img/screwdriver.png"
     },
     "item-hammer": {
       "name": "hammer",
       "x": 50,
       "y": 100,
-      "image": "img/hammer.png"
+      "image": "/img/hammer.png"
     },
     "item-wires": {
       "name": "wires",
       "x": 75,
       "y": 75,
-      "image": "img/wires.png"
+      "image": "/img/wires.png"
+    },
+    "item-magnet": {
+      "name": "magnet",
+      "x": 45,
+      "y": 100,
+      "image": "/img/magnet.png"
+    },
+    "item-basbeall-bat":{
+      "name": "baseball-bat",
+      "x": 150,
+      "y": 125,
+      "image": "/img/baseball-bat.png"
+    },
+    "item-umbrella-1": {
+      "name": "umbrella-1",
+      "x": 160,
+      "y": 75,
+      "image": "/img/umbrella-1.png"
+    },
+    "item-umbrella-2": {
+      "name": "umbrella-2",
+      "x": 180,
+      "y": 85,
+      "image": "/img/umbrella-2.png"
     }
   },
   "characters": {
@@ -40,31 +86,43 @@
       "name": "Space Horse",
       "x": 25,
       "y": 25,
-      "image": "img/SpaceHorse.png"
+      "image": "/img/SpaceHorse.png"
     },
     "character-space-horse-confused": {
       "name": "Confused Space Horse",
       "x": 25,
       "y": 25,
-      "image": "img/ConfusedSpaceHorse.png"
+      "image": "/img/ConfusedSpaceHorse.png"
     },
     "character-space-horse-shock": {
       "name": "Shocked Space Horse",
       "x": 25,
       "y": 25,
-      "image": "img/ShockedSpaceHorse.png"
+      "image": "/img/ShockedSpaceHorse.png"
     },
     "character-doctor":{
       "name": "Doctor",
       "x": 45,
       "y": 25,
-      "image": "img/Doctor.png"
+      "image": "/img/Doctor.png"
+    },
+    "character-diplodocus":{
+      "name": "Diplodocus",
+      "x" : 45,
+      "y": 25,
+      "image": "/img/Diplodocus.png"
+    },
+    "character-triceratops":{
+      "name": "Triceratops",
+      "x": 65,
+      "y": 25,
+      "image": "/img/Triceratops.png"
     }
   },
   "portals": {
     "portal-1": {
       "to": [
-        "scene-1",
+        "scene-",
         "scene-2"
       ],
       "items": [
@@ -94,6 +152,33 @@
         "What do you mean a fucking mission? I'm not some 007 shit, I'm KEITH from SLOUGH",
         "I accidentally gave your old body a horse brain, and this human used his new opposable thumbs to start one of two time machines and is now causing trouble all across history by leaving items from our time period to stop these historic moments in time. Your mission is to go and stop him by collecting these items.",
         "However, he did break our other time machine, but I believe the parts are scattered around this hospital room to rebuild it! Best of luck!"
+      ]
+    },
+    "dialogue-dinosaur": {
+      "text-diplodocus": [
+        "Hello there, I am Duchess Diplodocus! How may I help you dear today?",
+        "Uhh, have you seen a human round here recently?",
+        "What's a human?",
+        "Walks on two legs, has arms, pretty short?",
+        "All i know similiar to that is a stenonychosaurus",
+        "Yeh sure",
+        "Well yes then! There was one here earlier, though it made a very weird, un-stenonychosaurus like noise",
+        "What sort of noise?",
+        "NEIGHHHHHHHHHHHHHHHHHHHHH",
+        "Uh yeh, that's the guy I'm looking for? Did he do anything weird?",
+        "He dropped something the started attracting all the rocks, and something that looked like a carved stick",
+        "Okay, I'll have a search around"
+      ],
+      "text-triceratops": [
+        "ROAR roar roar",
+        "What the fuck, I can't communicate to this guy",
+        "Jokes on you fam, I can speak yo language",
+        "Oh haha, funny",
+        "Innit bruv, what you doing down these ends",
+        "I still can't communicate with you",
+        "Alright, alright, allow it. Who the hell are you?",
+        "Uh I'm a horse? Have you seen any weird things around recently?",
+        "Okay thanks!"
       ]
     }
   }

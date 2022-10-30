@@ -18,6 +18,7 @@ public class GameObjectStore {
         return instance;
     }
 
+    private String menuImage;
     private String initialScene;
     private Map<String, Scene> scenes;
     private Map<String, Item> items;
@@ -26,6 +27,14 @@ public class GameObjectStore {
     private Map<String, Dialogue> dialogues;
 
     private GameObjectStore() {}
+
+    public String getMenuImage() {
+        return menuImage;
+    }
+
+    public void setMenuImage(String menuImage) {
+        this.menuImage = menuImage;
+    }
 
     public String getInitialScene() {
         return initialScene;
