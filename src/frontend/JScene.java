@@ -2,6 +2,7 @@ package frontend;
 
 import backend.Game;
 import backend.GameObjectStore;
+import backend.Player;
 import backend.objects.Scene;
 import exceptions.NoSuchGameObjectException;
 
@@ -34,7 +35,7 @@ public class JScene extends JLabel {
                 add(new JCharacter(characterId, this));
             }
             for (String itemId : scene.getItemIds()) {
-                add(new JItem(itemId, this));
+                add(new JItem(itemId, this, this::itemClickHandler));
             }
             for (String dialogueId : scene.getDialogueIds()) {
                 add(new JDialogue(dialogueId, this));
@@ -42,5 +43,11 @@ public class JScene extends JLabel {
         } catch (NoSuchGameObjectException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    private void itemClickHandler() {
+        try {
+            Player player = Game.getInstance().getPlayer();
+        } catch (Exception ex) {}
     }
 }

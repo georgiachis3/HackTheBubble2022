@@ -12,11 +12,13 @@ import java.awt.event.ActionEvent;
 public class JItem extends JButton {
     private final String itemId;
     private final Container frame;
+    private final Runnable sceneClickHandler;
 
-    public JItem(String itemId, Container frame) throws NoSuchGameObjectException {
+    public JItem(String itemId, Container frame, Runnable sceneClickHandler) throws NoSuchGameObjectException {
         super("");
         this.itemId = itemId;
         this.frame = frame;
+        this.sceneClickHandler = sceneClickHandler;
         Item item = GameObjectStore.getInstance().getItemById(itemId);
 
         ImageIcon icon = new ImageIcon(Game.getResource(item.getImage()));
@@ -38,6 +40,7 @@ public class JItem extends JButton {
             JDialogue jDialogue = new JDialogue("dialogue-inv", frame);
             frame.add(jDialogue);
             frame.remove(this);
+            sceneClickHandler.run();
         } catch (Exception err) {
             System.err.println(err.getMessage());
         }
