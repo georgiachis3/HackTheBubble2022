@@ -6,20 +6,36 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.List;
 
 public class Portal {
-    private final List<String> toIds;
+    private final String toId;
     private final List<String> items;
 
+    private final int x;
+    private final int y;
+
     @JsonCreator
-    public Portal(@JsonProperty("to") List<String> to, @JsonProperty("items") List<String> items) {
-        this.toIds = to;
+    public Portal(@JsonProperty("to") String to,
+                  @JsonProperty("items") List<String> items,
+                  @JsonProperty("x") int x,
+                  @JsonProperty("y") int y) {
+        this.toId = to;
         this.items = items;
+        this.x = x;
+        this.y = y;
     }
 
-    public List<String> getToIds() {
-        return toIds;
+    public String getToId() {
+        return toId;
     }
 
     public List<String> getItems() {
         return items;
+    }
+
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
     }
 }
