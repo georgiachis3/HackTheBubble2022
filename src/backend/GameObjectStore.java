@@ -23,7 +23,7 @@ public class GameObjectStore {
     private Map<String, Scene> scenes;
     private Map<String, Item> items;
     private Map<String, Character> characters;
-    private Map<String, Portal> portal;
+    private Map<String, Portal> portals;
 
     private GameObjectStore() {}
 
@@ -37,6 +37,10 @@ public class GameObjectStore {
 
     public void setCharacters(Map<String, Character> characters) {
         this.characters = characters;
+    }
+
+    public void setPortals(Map<String, Portal> portals) {
+        this.portals = portals;
     }
 
     public Scene getSceneById(String id) throws NoSuchGameObjectException {
@@ -64,8 +68,8 @@ public class GameObjectStore {
     }
 
     public Portal getPortalById(String id) throws NoSuchGameObjectException {
-        if (portal.containsKey(id)) {
-            return portal.get(id);
+        if (portals.containsKey(id)) {
+            return portals.get(id);
         } else {
             throw new NoSuchGameObjectException();
         }
