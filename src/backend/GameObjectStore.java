@@ -77,7 +77,7 @@ public class GameObjectStore {
         if (scenes.containsKey(id)) {
             return scenes.get(id);
         } else {
-            throw new NoSuchGameObjectException();
+            throw new NoSuchGameObjectException(id);
         }
     }
 
@@ -85,7 +85,7 @@ public class GameObjectStore {
         if (items.containsKey(id)) {
             return items.get(id);
         } else {
-            throw new NoSuchGameObjectException();
+            throw new NoSuchGameObjectException(id);
         }
     }
 
@@ -93,7 +93,7 @@ public class GameObjectStore {
         if (characters.containsKey(id)) {
             return characters.get(id);
         } else {
-            throw new NoSuchGameObjectException();
+            throw new NoSuchGameObjectException(id);
         }
     }
 
@@ -101,7 +101,7 @@ public class GameObjectStore {
         if (portals.containsKey(id)) {
             return portals.get(id);
         } else {
-            throw new NoSuchGameObjectException();
+            throw new NoSuchGameObjectException(id);
         }
     }
 
@@ -109,7 +109,7 @@ public class GameObjectStore {
         if (dialogues.containsKey(id)) {
             return dialogues.get(id);
         } else {
-            throw new NoSuchGameObjectException();
+            throw new NoSuchGameObjectException(id);
         }
     }
 }
