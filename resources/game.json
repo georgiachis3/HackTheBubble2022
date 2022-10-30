@@ -154,8 +154,8 @@
         "However, he did break our other time machine, but I believe the parts are scattered around this hospital room to rebuild it! Best of luck!"
       ]
     },
-    "dialogue-dinosaur": {
-      "text-diplodocus": [
+    "dialogue-diplodocus": {
+      "text": [
         "Hello there, I am Duchess Diplodocus! How may I help you dear today?",
         "Uhh, have you seen a human round here recently?",
         "What's a human?",
@@ -168,8 +168,10 @@
         "Uh yeh, that's the guy I'm looking for? Did he do anything weird?",
         "He dropped something the started attracting all the rocks, and something that looked like a carved stick",
         "Okay, I'll have a search around"
-      ],
-      "text-triceratops": [
+      ]
+    },
+    "dialogue-triceratops": {
+      "text": [
         "ROAR roar roar",
         "What the fuck, I can't communicate to this guy",
         "Jokes on you fam, I can speak yo language",
