@@ -5,6 +5,7 @@ import backend.GameObjectStore;
 import backend.objects.Scene;
 import exceptions.NoSuchGameObjectException;
 
+import frontend.JCharacter;
 import javax.swing.*;
 
 public class JScene extends JLabel {
@@ -28,8 +29,18 @@ public class JScene extends JLabel {
     }
 
     private void createObjects(Scene scene) {
-        for (String characterId : scene.getCharacterIds()) {
-
+        try {
+            for (String characterId : scene.getCharacterIds()) {
+                add(new JCharacter(characterId));
+            }
+            for (String itemId : scene.getItemIds()) {
+                add(new JItem(itemId));
+            }
+            for (String dialogueId : scene.getDialogueIds()) {
+                add(new JDialogue(dialogueId, this));
+            }
+        } catch (NoSuchGameObjectException e) {
+            throw new RuntimeException(e);
         }
     }
 }
