@@ -14,13 +14,14 @@
       "characters": [
         "character-space-horse",
         "character-space-horse-confused",
-        "character-space-horse-shock",
+        "character-space-horse-shocked",
         "character-doctor"
       ],
       "dialogues": [
         "dialogue-basic",
         "dialogue-space-hospital"
-      ]
+      ],
+      "portal": "portal-hospital"
     },
     "scene-dinosaur": {
       "name": "Dinosaur",
@@ -34,7 +35,8 @@
         "character-space-horse-dino",
         "character-diplodocus",
         "character-triceratops"
-      ]
+      ],
+      "portal": "portal-dinosaur"   
     },
     "scene-egypt": {
       "name": "Egypt",
@@ -47,7 +49,8 @@
       "characters": [
         "character-space-horse",
         "character-sphinx"
-      ]
+      ],
+      "portal": "portal-egypt"
     },
     "scene-plague": {
       "name": "Plague",
@@ -63,22 +66,24 @@
         "character-space-horse-dying",
         "character-plague-doctor",
         "character-rat"
-      ]
+      ],
+      "portal": "portal-plague"
     },
     "scene-greece": {
       "name": "Greece",
-      "background-image": "/img/greecebackground.png",
+      "background-image": "/img/greece-scene.png",
       "items" : [
       ],
       "characters": [
         "character-space-horse-ill",
         "character-poseidon",
         "character-keith-all-fours"
-      ]
+      ],
+      "portal": "portal-greece"
     },
     "scene-slough": {
       "name": "Slough",
-      "background-image": "/img/slough.png",
+      "background-image": "/img/slough-scene.png",
       "items" : [
       ],
       "characters": [
@@ -265,10 +270,39 @@
     }
   },
   "portals": {
-    "portal-1": {
-      "to": "scene-1",
+    "portal-hospital": {
+      "to": "scene-dinosaur",
       "items": [
-
+        "item-magnet",
+        "item-baseball-bat",
+        "item-umbrella-1"
+      ]
+    },
+    "portal-dinosaur": {
+      "to": "scene-egypt",
+      "items": [
+        "item-fish",
+        "item-sun",
+        "item-fire"
+      ]
+    },
+    "portal-egypt": {
+      "to": "scene-plague",
+      "items": [
+        "item-paracetamol-1",
+        "item-paracetamol-2",
+        "item-rat-trap-1",
+        "item-rat-trap-2"
+      ]
+    },
+    "portal-plague": {
+      "to": "scene-greece",
+      "items": [
+      ]
+    },
+    "portal-slough": {
+      "to": "scene-slough",
+      "items": [
       ]
     }
   },
@@ -279,7 +313,7 @@
         "You still have items to find"
       ]
     },
-    "dialogue-space-hospital": {
+    "dialogue-space-hosptial": {
       "text": [
         "Space Horse: What. The. Fuck",
         "Doctor: Hello Space Horse",
