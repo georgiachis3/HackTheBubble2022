@@ -1,7 +1,9 @@
 {
+  "menuImage": "/img/menu.png",
+  "initialScene": "scene-space-hospital",
   "scenes": {
     "scene-space-hospital": {
-      "name": "Space-Hospital",
+      "name": "Space Hospital",
       "items": [
         "item-screwdriver",
         "item-hammer",
@@ -20,19 +22,19 @@
       "name": "screwdriver",
       "x": 100,
       "y": 50,
-      "image": "img/screwdriver.png"
+      "image": "/img/screwdriver.png"
     },
     "item-hammer": {
       "name": "hammer",
       "x": 50,
       "y": 100,
-      "image": "img/hammer.png"
+      "image": "/img/hammer.png"
     },
     "item-wires": {
       "name": "wires",
       "x": 75,
       "y": 75,
-      "image": "img/wires.png"
+      "image": "/img/wires.png"
     }
   },
   "characters": {
@@ -40,25 +42,25 @@
       "name": "Space Horse",
       "x": 25,
       "y": 25,
-      "image": "img/SpaceHorse.png"
+      "image": "/img/SpaceHorse.png"
     },
     "character-space-horse-confused": {
       "name": "Confused Space Horse",
       "x": 25,
       "y": 25,
-      "image": "img/ConfusedSpaceHorse.png"
+      "image": "/img/ConfusedSpaceHorse.png"
     },
     "character-space-horse-shock": {
       "name": "Shocked Space Horse",
       "x": 25,
       "y": 25,
-      "image": "img/ShockedSpaceHorse.png"
+      "image": "/img/ShockedSpaceHorse.png"
     },
     "character-doctor":{
       "name": "Doctor",
       "x": 45,
       "y": 25,
-      "image": "img/Doctor.png"
+      "image": "/img/Doctor.png"
     }
   },
   "portals": {
