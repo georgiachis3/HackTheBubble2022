@@ -38,7 +38,7 @@
     },
     "scene-egypt": {
       "name": "Egypt",
-      "background-image": "/img/egyptbackground.png",
+      "background0image": "/img/egyptbackground.png",
       "items" : [
         "item-fish",
         "item-sun",
@@ -51,7 +51,7 @@
     },
     "scene-plague": {
       "name": "Plague",
-      "background-image": "/img/plaguebackground.png",
+      "background0image": "/img/plaguebackground.png",
       "items" : [
         "item-paracetamol-1",
         "item-paracetamol-2",
@@ -67,18 +67,18 @@
     },
     "scene-greece": {
       "name": "Greece",
-      "background-image": "/img/greece-scene.png",
+      "background0image": "/img/greecebackground.png",
       "items" : [
       ],
       "characters": [
-        "character-space-horse-dying",
+        "character-space-horse-ill",
         "character-poseidon",
         "character-keith-all-fours"
       ]
     },
     "scene-slough": {
       "name": "Slough",
-      "background-image": "/img/slough-scene.png",
+      "background0image": "/img/slough.png",
       "items" : [
       ],
       "characters": [
@@ -243,19 +243,25 @@
       "name": "Poseidon",
       "x": 47,
       "y": 12,
-      "image": "/img/Poseidon.png"
+      "image": "/img/poseidon.png"
     },
     "character-keith-all-fours":{
       "name": "Keith",
       "x": 69,
       "y": 69,
-      "image": "/img/Keith-All-Fours.png"
+      "image": "/img/keithgrass.png"
     },
     "character-keith-stood-up":{
       "name": "Keith",
       "x": 69,
       "y": 69,
-      "image": "/img/Keith-Stood-Up.png"
+      "image": "/img/keithslough.png"
+    },
+    "character-space-horse-ill": {
+      "name": "Ill Space Horse",
+      "x": 25,
+      "y": 25,
+      "image": "/img/illhorse.png"
     }
   },
   "portals": {
