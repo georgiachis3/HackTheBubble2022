@@ -2,6 +2,7 @@
   "scenes": {
     "scene-space-hospital": {
       "name": "Space-Hospital",
+      "background-image": "img/hospital.png",
       "items": [
         "item-screwdriver",
         "item-hammer",
@@ -16,6 +17,21 @@
       "dialogues": [
         "dialogue-basic",
         "dialogue-space-hospital"
+      ]
+    },
+    "scene-dinosaur": {
+      "name": "Dinosaur",
+      "background-image": "img/dinosaur-scene.png",
+      "items": [
+        "item-magnet",
+        "item-baseball-bat",
+        "item-umbrella-1",
+        "item-umbrella-2"
+      ],
+      "characters": [
+        "character-space-horse",
+        "character-diplodocus",
+        "character-triceratops"
       ]
     }
   },
@@ -37,6 +53,30 @@
       "x": 75,
       "y": 75,
       "image": "img/wires.png"
+    },
+    "item-magnet": {
+      "name": "magnet",
+      "x": 45,
+      "y": 100,
+      "image": "img/magnet.png"
+    },
+    "item-basbeall-bat":{
+      "name": "baseball-bat",
+      "x": 150,
+      "y": 125,
+      "image": "img/baseball-bat.png"
+    },
+    "item-umbrella-1": {
+      "name": "umbrella-1",
+      "x": 160,
+      "y": 75,
+      "image": "img/umbrella-1.png"
+    },
+    "item-umbrella-2": {
+      "name": "umbrella-2",
+      "x": 180,
+      "y": 85,
+      "image": "img/umbrella-2.png"
     }
   },
   "characters": {
@@ -63,12 +103,24 @@
       "x": 45,
       "y": 25,
       "image": "img/Doctor.png"
+    },
+    "character-diplodocus":{
+      "name": "Diplodocus",
+      "x" : 45,
+      "y": 25,
+      "image": "img/Diplodocus.png"
+    },
+    "character-triceratops":{
+      "name": "Triceratops",
+      "x": 65,
+      "y": 25,
+      "image": "img/Triceratops.png"
     }
   },
   "portals": {
     "portal-1": {
       "to": [
-        "scene-1",
+        "scene-",
         "scene-2"
       ]
     }
