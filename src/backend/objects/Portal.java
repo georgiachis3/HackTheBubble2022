@@ -1,21 +1,19 @@
 package backend.objects;
 
-import backend.GameObjectStore;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import exceptions.NoSuchGameObjectException;
 
 import java.util.List;
 
 public class Portal {
-    private final List<String> to;
+    private final List<String> toIds;
 
     @JsonCreator
     public Portal(@JsonProperty("to") List<String> to) {
-        this.to = to;
+        this.toIds = to;
     }
 
-    public List<String> getTo() {
-        return to;
+    public List<String> getToIds() {
+        return toIds;
     }
 }
