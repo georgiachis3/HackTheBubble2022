@@ -34,7 +34,7 @@ public class JScene extends JLabel {
                 add(new JCharacter(characterId));
             }
             for (String itemId : scene.getItemIds()) {
-                add(new JItem(itemId));
+                add(new JItem(itemId, this));
             }
             for (String dialogueId : scene.getDialogueIds()) {
                 add(new JDialogue(dialogueId, this));

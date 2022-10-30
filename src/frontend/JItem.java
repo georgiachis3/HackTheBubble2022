@@ -11,9 +11,9 @@ import java.awt.event.ActionEvent;
 
 public class JItem extends JButton {
     private final String itemId;
-    private final JFrame frame;
+    private final Container frame;
 
-    public JItem(String itemId, JFrame frame) throws NoSuchGameObjectException {
+    public JItem(String itemId, Container frame) throws NoSuchGameObjectException {
         super("");
         this.itemId = itemId;
         this.frame = frame;
