@@ -14,7 +14,7 @@
       "characters": [
         "character-space-horse",
         "character-space-horse-confused",
-        "character-space-horse-shocked",
+        "character-space-horse-shock",
         "character-doctor"
       ],
       "dialogues": [
@@ -279,7 +279,7 @@
         "You still have items to find"
       ]
     },
-    "dialogue-space-hosptial": {
+    "dialogue-space-hospital": {
       "text": [
         "Space Horse: What. The. Fuck",
         "Doctor: Hello Space Horse",
