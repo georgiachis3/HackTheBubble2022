@@ -269,21 +269,29 @@
     "portal-hospital": {
       "to": "scene-dinosaur",
       "items": [
+        "item-screwdriver",
+        "item-hammer",
+        "item-wires"
+      ]
+    },
+    "portal-dinosaur": {
+      "to": "scene-egypt",
+      "items": [
         "item-magnet",
         "item-baseball-bat",
         "item-umbrella-1"
       ]
     },
-    "portal-dinosaur": {
-      "to": "scene-egypt",
+    "portal-egypt": {
+      "to": "scene-plague",
       "items": [
         "item-fish",
         "item-sun",
         "item-fire"
       ]
     },
-    "portal-egypt": {
-      "to": "scene-plague",
+    "portal-plague": {
+      "to": "scene-greece",
       "items": [
         "item-paracetamol-1",
         "item-paracetamol-2",
@@ -291,12 +299,7 @@
         "item-rat-trap-2"
       ]
     },
-    "portal-plague": {
-      "to": "scene-greece",
-      "items": [
-      ]
-    },
-    "portal-slough": {
+    "portal-greece": {
       "to": "scene-slough",
       "items": [
       ]
