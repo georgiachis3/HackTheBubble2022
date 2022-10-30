@@ -67,7 +67,7 @@ public class GameWindow extends JFrame{
         try {
             Game game = Game.getInstance();
             String sceneId = game.getScene();
-            add(new JScene(sceneId));
+            contentPane.add(new JScene(sceneId, this::changeScene));
         } catch (IOException e) {
             throw new RuntimeException(e);
         } catch (URISyntaxException e) {
@@ -76,5 +76,9 @@ public class GameWindow extends JFrame{
             throw new RuntimeException(e);
         }
         refresh();
+    }
+
+    public void changeScene() {
+        loadNewScene();
     }
 }
