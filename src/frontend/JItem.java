@@ -35,6 +35,9 @@ public class JItem extends JButton {
     private void clickHandler(ActionEvent e) {
         try {
             Game.getInstance().getPlayer().addItem(itemId);
+            JDialogue jDialogue = new JDialogue(dialogueId, frame);
+            frame.add(jDialogue);
+            frame.remove(this);
         } catch (Exception err) {
             System.err.println(err.getMessage());
         }

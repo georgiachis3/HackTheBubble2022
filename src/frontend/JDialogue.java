@@ -24,7 +24,7 @@ public class JDialogue extends JButton {
         Dialogue dialogue = GameObjectStore.getInstance().getDialogueById(dialogueId);
 
         Dimension size = getPreferredSize();
-        setBounds(0,800, Config.SCREEN_WIDTH, 100);
+        setBounds(0,0, Config.SCREEN_WIDTH, 100);
         setFont(new Font("Sans-Serif", Font.PLAIN, 24));
 
         setOpaque(true);
@@ -45,6 +45,7 @@ public class JDialogue extends JButton {
     private void nextDialogue() {
         if (dialogueList.size() == 0) {
             parentElement.remove(this);
+            System.out.println("ashdjasd");
             return;
         }
         setText(dialogueList.get(0));
