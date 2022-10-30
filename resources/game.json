@@ -408,6 +408,11 @@
       "text": [
         "Keith: Fuck."
       ]
+    },
+    "dialogue-inv": {
+      "text": [
+        "Added to inventory..."
+      ]
     }
   }
 }
