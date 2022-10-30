@@ -20,6 +20,7 @@ public class GameObjectStore {
 
     private String menuImage;
     private String initialScene;
+    private String itemPickupDialogue;
     private Map<String, Scene> scenes;
     private Map<String, Item> items;
     private Map<String, Character> characters;
@@ -34,6 +35,14 @@ public class GameObjectStore {
 
     public void setMenuImage(String menuImage) {
         this.menuImage = menuImage;
+    }
+
+    public String getItemPickupDialogue() {
+        return itemPickupDialogue;
+    }
+
+    public void setItemPickupDialogue(String itemPickupDialogue) {
+        this.itemPickupDialogue = itemPickupDialogue;
     }
 
     public String getInitialScene() {

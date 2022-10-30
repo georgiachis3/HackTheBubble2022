@@ -1,6 +1,7 @@
 {
   "menuImage": "/img/menu.png",
   "initialScene": "scene-space-hospital",
+  "itemPickupDialogue": "dialogue-basic",
   "scenes": {
     "scene-space-hospital": {
       "name": "Space Hospital",
