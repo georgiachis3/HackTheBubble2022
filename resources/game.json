@@ -266,10 +266,7 @@
   },
   "portals": {
     "portal-1": {
-      "to": [
-        "scene-",
-        "scene-2"
-      ],
+      "to": "scene-1",
       "items": [
 
       ]
