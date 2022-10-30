@@ -18,6 +18,7 @@ public class GameObjectStore {
         return instance;
     }
 
+    private String initialScene;
     private Map<String, Scene> scenes;
     private Map<String, Item> items;
     private Map<String, Character> characters;
@@ -25,6 +26,14 @@ public class GameObjectStore {
     private Map<String, Dialogue> dialogues;
 
     private GameObjectStore() {}
+
+    public String getInitialScene() {
+        return initialScene;
+    }
+
+    public void setInitialScene(String initialScene) {
+        this.initialScene = initialScene;
+    }
 
     public void setScenes(Map<String, Scene> scenes) {
         this.scenes = scenes;

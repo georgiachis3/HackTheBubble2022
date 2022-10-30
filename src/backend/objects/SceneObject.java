@@ -20,4 +20,16 @@ public abstract class SceneObject {
     public String getName() {
         return name;
     }
+
+    public String getImage() {
+        return image;
+    }
+
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
+    }
 }

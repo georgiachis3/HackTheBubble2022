@@ -13,5 +13,7 @@ public class Dialogue {
         this.text = text;
     }
 
-
+    public List<String> getText() {
+        return text;
+    }
 }
