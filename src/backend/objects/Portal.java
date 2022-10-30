@@ -18,4 +18,8 @@ public class Portal {
     public List<String> getToIds() {
         return toIds;
     }
+
+    public List<String> getItems() {
+        return items;
+    }
 }

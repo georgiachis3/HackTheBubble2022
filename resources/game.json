@@ -140,48 +140,49 @@
     },
     "dialogue-space-hosptial": {
       "text": [
-        "What. The. Fuck",
-        "Hello Space Horse",
-        "Who is Space Horse? I'm Keith from Slough",
-        "I hate to tell you this, but you were in a major car accident, however we have performed life saving surgery, with one implication",
-        "What implication?",
-        "You're a horse",
+        "Space Horse: What. The. Fuck",
+        "Doctor: Hello Space Horse",
+        "Space Horse: Who is Space Horse? I'm Keith from Slough",
+        "Doctor: I hate to tell you this, but you were in a major car accident, however we have performed life saving surgery, with one implication",
+        "Space Horse: What implication?",
+        "Doctor: You're a horse",
         "Space Horse was in shock. How was he a horse? Where is he? Sure technology was advanced but he never knew of someone becoming a horse?!",
         "As Space Horse slept, the doctor had a worrying realisation",
-        "When transferring Space Horse's brain to his new body, I accidentally transferred the horse brain to a human...",
-        "Space Horse, I have a mission for you",
-        "What do you mean a fucking mission? I'm not some 007 shit, I'm KEITH from SLOUGH",
-        "I accidentally gave your old body a horse brain, and this human used his new opposable thumbs to start one of two time machines and is now causing trouble all across history by leaving items from our time period to stop these historic moments in time. Your mission is to go and stop him by collecting these items.",
-        "However, he did break our other time machine, but I believe the parts are scattered around this hospital room to rebuild it! Best of luck!"
+        "Doctor: When transferring Space Horse's brain to his new body, I accidentally transferred the horse brain to a human...",
+        "Doctor: Space Horse, I have a mission for you",
+        "Space Horse: What do you mean a fucking mission? I'm not some 007 shit, I'm KEITH from SLOUGH",
+        "Doctor: I accidentally gave your old body a horse brain, and this human used his new opposable thumbs to start one of two time machines and is now causing trouble all across history by leaving items from our time period to stop these historic moments in time. Your mission is to go and stop him by collecting these items.",
+        "Doctor: However, he did break our other time machine, but I believe the parts are scattered around this hospital room to rebuild it! Best of luck!"
       ]
     },
     "dialogue-diplodocus": {
       "text": [
-        "Hello there, I am Duchess Diplodocus! How may I help you dear today?",
-        "Uhh, have you seen a human round here recently?",
-        "What's a human?",
-        "Walks on two legs, has arms, pretty short?",
-        "All i know similiar to that is a stenonychosaurus",
-        "Yeh sure",
-        "Well yes then! There was one here earlier, though it made a very weird, un-stenonychosaurus like noise",
-        "What sort of noise?",
-        "NEIGHHHHHHHHHHHHHHHHHHHHH",
-        "Uh yeh, that's the guy I'm looking for? Did he do anything weird?",
-        "He dropped something the started attracting all the rocks, and something that looked like a carved stick",
-        "Okay, I'll have a search around"
+        "Diplodocus: Hello there, I am Duchess Diplodocus! How may I help you dear today?",
+        "Space Horse: Uhh, have you seen a human round here recently?",
+        "Diplodocus: What's a human?",
+        "Space Horse: Walks on two legs, has arms, pretty short?",
+        "Diplodocus: All I know similiar to that is a stenonychosaurus",
+        "Space Horse: Yeh sure",
+        "Diplodocus: Well yes then! There was one here earlier, though it made a very weird, un-stenonychosaurus like noise",
+        "Space Horse: What sort of noise?",
+        "Diplodocus: NEIGHHHHHHHHHHHHHHHHHHHHH",
+        "Space Horse: Uh yeh, that's the guy I'm looking for? Did he do anything weird?",
+        "Diplodocus: He dropped something the started attracting all the rocks, and something that looked like a carved stick",
+        "Space Horse: Okay, I'll have a search around"
       ]
     },
     "dialogue-triceratops": {
       "text": [
-        "ROAR roar roar",
-        "What the fuck, I can't communicate to this guy",
-        "Jokes on you fam, I can speak yo language",
-        "Oh haha, funny",
-        "Innit bruv, what you doing down these ends",
-        "I still can't communicate with you",
-        "Alright, alright, allow it. Who the hell are you?",
-        "Uh I'm a horse? Have you seen any weird things around recently?",
-        "Okay thanks!"
+        "Triceratops: ROAR roar roar",
+        "Space Horse: What the fuck, I can't communicate to this guy",
+        "Triceratops: Jokes on you fam, I can speak yo language",
+        "Space Horse: Oh haha, funny",
+        "Triceratops: Innit bruv, what you doing down these ends",
+        "Space Horse: I still can't communicate with you",
+        "Triceratops: Alright, alright, allow it. Who the hell are you?",
+        "Space Horse: Uh I'm a horse? Have you seen any weird things around recently?",
+        "Triceratops: Yeh, this well weird fucker dropped some expanding thing over there somewhere",
+        "Space Horse: Okay thanks!"
       ]
     }
   }
