@@ -265,13 +265,10 @@
     }
   },
   "portals": {
-    "portal-1": {
-      "to": [
-        "scene-",
-        "scene-2"
-      ],
+    "portal-hospital": {
+      "to": "scene-dinosuar",
       "items": [
-
+        
       ]
     }
   },
