@@ -8,7 +8,7 @@ import java.net.URISyntaxException;
 
 public class Main {
     public static void main(String[] args) throws IOException, URISyntaxException {
-        Game game = new Game();
+        Game game = Game.getInstance();
         JFrame frame = new GameWindow();
     }
 }
