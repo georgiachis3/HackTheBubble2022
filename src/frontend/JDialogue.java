@@ -45,12 +45,17 @@ public class JDialogue extends JButton {
     private void nextDialogue() {
         if (dialogueList.size() == 0) {
             parentElement.remove(this);
+            parentElement.invalidate();
+            parentElement.validate();
+            parentElement.repaint();
             System.out.println("ashdjasd");
             return;
         }
-        setText(dialogueList.get(0));
-        dialogueList.remove(0);
-
+        String text = dialogueList.get(0);
+        if (text != "") {
+            setText(dialogueList.get(0));
+            dialogueList.remove(0);
+        }
     }
 
 }
