@@ -65,6 +65,26 @@
         "character-plague-doctor",
         "character-rat"
       ]
+    },
+    "scene-greece": {
+      "name": "Greece",
+      "background0image": "/img/greece-scene.png",
+      "items" : [
+      ],
+      "characters": [
+        "character-space-horse-dying",
+        "character-poseidon",
+        "character-keith-all-fours"
+      ]
+    },
+    "scene-slough": {
+      "name": "Slough",
+      "background0image": "/img/slough-scene.png",
+      "items" : [
+      ],
+      "characters": [
+        "character-keith-stood-up"
+      ]
     }
   },
   "items": {
@@ -219,6 +239,24 @@
       "x": 25,
       "y": 25,
       "image": "/img/DyingSpaceHorse.png"
+    },
+    "character-poseidon": {
+      "name": "Poseidon",
+      "x": 47,
+      "y": 12,
+      "image": "/img/Poseidon.png"
+    },
+    "character-keith-all-fours":{
+      "name": "Keith",
+      "x": 69,
+      "y": 69,
+      "image": "/img/Keith-All-Fours.png"
+    },
+    "character-keith-stood-up":{
+      "name": "Keith",
+      "x": 69,
+      "y": 69,
+      "image": "/img/Keith-Stood-Up.png"
     }
   },
   "portals": {
@@ -316,6 +354,27 @@
         "Rat: These rat traps! They're killing of all the rats, and the plague can't spread",
         "Space Horse: Don't worry! Space horse is on it!",
         "Rat: Mate you're not some fucking superhero"
+      ]
+    },
+    "dialogue-greek-poseidon": {
+      "text": [
+        "Poseidon: Ah Space Horse! You have made it at last",
+        "Space Horse: What do you mean, at last?",
+        "Poseidon: Well I've been talking with my friend Keith over here, and he seems to think he is trapped in the wrong body! I captured him trying to stop the plague.",
+        "Space Horse: Oh thank fuck, I've been travelling all over god knows where trying to find him... though I don't really care, I need to find Asclepius",
+        "Poseidon: No worries about Asclepius, I have an even better solution for you, I am the God of Horses after all",
+        "Space Horse: What's that?",
+        "Poseidon: Bibbidi bobbidi boo"
+      ]
+    },
+    "dialogue-greek-keith": {
+      "text": [
+        "Keith: Neigh"
+      ]
+    },
+    "dialogue-slough": {
+      "text": [
+        "Keith: Fuck."
       ]
     }
   }
