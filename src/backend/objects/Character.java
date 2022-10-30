@@ -4,11 +4,9 @@ package backend.objects;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-import java.util.List;
-
 public class Character extends SceneObject {
 
-    private final List<String> dialogueIds;
+    private final String dialogue;
 
     @JsonCreator
     public Character(
@@ -16,9 +14,13 @@ public class Character extends SceneObject {
             @JsonProperty("image") String image,
             @JsonProperty("x") int x,
             @JsonProperty("y") int y,
-            @JsonProperty("dialogues") List<String> dialogueIds) {
+            @JsonProperty("dialogues") String dialogue) {
         super(name, image, x, y); {
-            this.dialogueIds = dialogueIds;
+            this.dialogue = dialogue;
         }
+    }
+
+    public String getDialogueId() {
+        return dialogue;
     }
 }
