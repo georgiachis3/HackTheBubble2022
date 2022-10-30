@@ -71,7 +71,7 @@
       "items" : [
       ],
       "characters": [
-        "character-space-horse-dying",
+        "character-space-horse-ill",
         "character-poseidon",
         "character-keith-all-fours"
       ]
@@ -256,6 +256,12 @@
       "x": 69,
       "y": 69,
       "image": "/img/Keith-Stood-Up.png"
+    },
+    "character-space-horse-ill": {
+      "name": "Ill Space Horse",
+      "x": 25,
+      "y": 25,
+      "image": "/img/illhorse.png"
     }
   },
   "portals": {
