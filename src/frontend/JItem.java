@@ -38,6 +38,7 @@ public class JItem extends JButton {
             JDialogue jDialogue = new JDialogue("dialogue-inv", frame);
             frame.add(jDialogue);
             frame.remove(this);
+            frame.invalidate();
         } catch (Exception err) {
             System.err.println(err.getMessage());
         }
